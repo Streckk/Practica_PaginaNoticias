@@ -3,36 +3,61 @@
 <head>
     <title>Document</title>
 </head>
+<style>
+    #contenedor{
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        text-align: start;
+    }
+    .img1{
+        margin-right: 10px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img2{
+        margin-right: 10px;
+        width: 400px;
+    }
+    .titulo{
+        background-color: rgb(121, 24, 44);
+        font-style: italic;
+        color: white;
+        font-size: 15px;
+        background-position: 10px 0px;
+        margin-bottom: 10px;
+        margin-right:1240px;
+        text-transform: uppercase;
+        text-align: start;
+    }
+    .divcentro{
+        margin-left: 540px;
+    }
+    #p2{
+        color: rgb(160, 160, 160);
+    }
+    #p1{
+        font-family: Barlow Condensed, Helvetica, Arial, sans-serif;
+    }
+
+</style>
 <body>
-    <!--Esta parte sirve para la seccion de la cabeza-->
-    <header>
-        <h1 id="titulo">Blog de Rico</h1>
-    </header>
-    <!--El div es un divider(divisor de secciones)-->
     <div>
-        <p>Soy un parrafo dentro de un div</p>
+        <div id="contenedor">
+            <img class="img1" src="https://scontent.frex1-1.fna.fbcdn.net/v/t39.30808-6/330580820_1907555846265159_3034515787605662113_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeECQyqKDlpVI6MUcSpvK55kYYiey1n7GulhiJ7LWfsa6a2LGED0qE4jbrRa0SnkCGoaLK6s9KS47AU-7FwD68ND&_nc_ohc=CnN5gM1OU-EAX8m0Px0&_nc_ht=scontent.frex1-1.fna&oh=00_AfB7FZGaJ8a392-aND8aIXiE5oZa8NhLhrBr1SA132Qgyw&oe=63F70505">
+            <img class="img2" src="https://scontent.frex1-1.fna.fbcdn.net/v/t39.30808-6/331022377_741253174276505_6848023795625785456_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFw_poXyiKwNcqaa9mT8GA52ViVQpvhjZjZWJVCm-GNmE0wCEZo2fAyVQ1UBic2C9jUEBleIhlEx9v2-lGraMMt&_nc_ohc=i_JDyMv2ZGQAX_bxAri&_nc_ht=scontent.frex1-1.fna&oh=00_AfAf2qgDfH6T8xxwSSezTvkr9d09ryaul4vR2h7VhYDdEg&oe=63F6D1F8">
+            
+        </div>
+        <div class="divcentro">
+            <h3 class="titulo">Atento aviso</h3>
+            <p id="p1">Este sábado 18 de febrero iniciamos las asesorías de matemáticas ✖️➗ y de programación 💻 <br>para estudiantes de básico y medio superior por lo que ponemos a su disposición el servicio <br>del #TeckyBus 🚌 en la ruta centro y centro por Rotaria 👇👇</p>
+        
+        
+        <p id="p2"><Strong>Nos vemos el sábado 😉</Strong>  <br>
+        Informes al WhatsApp 📱 83123272802 o envía un correo a contacto@itsmante.edu.mx</p>
+
     </div>
-    <!--Esta parte sirve para la seccion de el cuerpo-->
-    <section>
-        <article class="post">
-            <h2>Título de mi post</h2>
-            <p>Descripcion de mi post</p>
-            <img src="assets/aerial-view-lago-antorno-dolomites-lake-mountain-landscape-alps-peak-misurina-cortina-di-ampezzo-italy-reflected-103752677.jpg" width="400"/>
-            <p>Texto del articulo que hay aca y es texto de prueba</p>
-        </article>
-        <article class="post">
-            <h2>Título de mi post 2</h2>
-            <p>Descripcion de mi post 2</p>
-            <img src="assets/photo-1612441804231-77a36b284856.jpg" width="400"/>
-            <p>Texto del articulo que hay aca y es texto de prueba</p>
-        </article>
-    </section>
-    <!--Esta parte sirve para la seccion del abajo-->
-    <footer>
-        <!--Etiqueta de correo-->
-        <a href="#titulo"> Ir al comienzo</a>
-        <a href="mailto:935xd3d115@gmail.com">Contactame aqui</a>
-        <p>Copyright 2023</p>
-    </footer>
+        </div>
 </body>
 </html>
