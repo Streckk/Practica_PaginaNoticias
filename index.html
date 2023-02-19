@@ -1,97 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mi primera web</title>
-    <style>
-        table, th, td {
-            border: 2px solid black;
-            
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tec News Mante</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--estos es una tabla-->
-    <table style="width: 500px;">
-        <!--el tr es tabla de rows(filas)-->
-        <thead>
-            <tr>
-                <!--el th es tabla de head(cabezera)-->
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!--el td es tabla de elementos estandares-->
-                <td>Hola beats</td>
-                <td>Gratis</td>
-            </tr>
-            <tr>
-                <!--el td es tabla de elementos estandares-->
-                <td>Rico es muy rico jaja</td>
-                <td>29,20$</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <td></td>
-            <td>Total: 49,80$</td>
-        </tfoot>
-    </table>
-
-    <!--ul es lista no ordenada-->
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ul>
-    <!--ol es lista ordenada-->
-    <ol>
-        <li value="50">Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <li>
-            <ol>
-                <li style="list-style-type: lower-roman;">sub elemento 1</li>
-                <li style="list-style-type: lower-roman;">sub elemento 2</li>
-                <li style="list-style-type: lower-roman;">sub elemento 3</li>
-            </ol>
-        </li>
-    </ol>
-
-    <!--Este es un formulario-->
-    <form action="/formulario" method="post">
-        <label for="nombre">Nombre</label>
-        <input value="chanquito" type="text" id="nombre" name="nombre" placeholder="Nombre" />
-        <br> <br>
-        <label for="apellido">Nombre</label>
-        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="apellido" />
-        <br><br>
-        <label for="comentario">Comentario</label>
-        <textarea rows="10" cols="50" id="comentario" placeholder="ingrese comentario" name="comentario">este es un valor por defecto</textarea>
-        <br>
-        <button type="button">Enviar</button>
-        <button type="reset">Enviar</button>
-        <button type="submit">Enviar</button>
-    </form>
-     <!--Los tipos de texto-->
-    <h1>Holaaa como estas</h1>
-    <h2>Holaaa como estas</h2>
-    <h3>Holaaa como estas</h3>
-    <h4>Holaaa como estas</h4>
-    <h5>Holaaa como estas</h5>
-    <h6> Holaaa como estas</h6>
-      <!--Esto es para un parrafo-->
-    <p>Hola esta es mi primer web.</p>
-     <!--Para hacer salto de linea-->
-    <hr>
-    <h2>hola felipe</h2>
-    <p>Texto un poco <span style="color:blue">mas largo</span> y para <br>mostrar mas</p>
-    <!--este es un comentario-->
-    <a target="_blank" href="https://www.google.com">Ir a google</a>
-    <img src="assets/aerial-view-lago-antorno-dolomites-lake-mountain-landscape-alps-peak-misurina-cortina-di-ampezzo-italy-reflected-103752677.jpg" height="400"/>
+    <header>
+        <div class="container">
+            <div class="parte-izquierda" style="width:15%;">
+                <div class="imagen-menu">
+                    <img src="images/menu.png" alt="menu" width="30px">
+                </div>
+                <div class="fecha-actual">
+                <time>19 de febrero 2023</time>
+                </div>
+            </div>
+            <div class="parte-media">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" width="250px" height="90px">
+                </div>
+            </div>
+            <div class="parte-derecha">
+                <div class="barra-busqueda">
+                    <img src="images/search.png" alt="busqueda" width="40px">
+                </div>
+            </div>
+        </div>
+    </header>
     
 </body>
 </html>
