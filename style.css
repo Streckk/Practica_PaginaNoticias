@@ -1,0 +1,189 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}       
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.field-section {
+    background-color: #000;
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    font-family: Barlow Condensed, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    margin-bottom: 10px;
+    padding: 0 2px;
+    text-transform: uppercase;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.item.article .field-section {
+    font-size: 1.125rem;
+}
+
+.block-list li {
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.block-list li h2 {
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.block-list li:first-child h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+
+
+
+.block-list .field-post-date {
+    display: none;
+}
+
+
+
+@media (min-width:1200px) {
+    .grid-highlight .grid-content {
+        grid-template: "last-news main col-right" /300px 1fr 300px;
+    }
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+a,
+a:hover {
+    color: inherit;
+}
+
+
+
+
+/* .row {
+    display: block;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}*/
+
+
+
+
+
+.grid .grid-content {
+    display:grid;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+
+
+h2 {/*margen en los media llink*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.block-title--list {/*formato del panel*/
+    align-items: center;
+    background-position: 0;
+    background-size: contain;
+    display: flex;
+    text-transform: uppercase;
+    text-indent: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+@media (min-width:768px) {/*posicion del  panel*/
+    .block-title--list {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+.block-title--list span.hashtag {/*relleno del@*/
+    color: #5e2400;
+    font-family: Barlow Condensed, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+@media (min-width:768px) {
+    .block-title--list span.hashtag {/*tamano del @*/
+        font-size: 2.8125rem;
+    }
+}
+
+
+
+.block-list--last-news .block-title--list span.hashtag {/*color del @*/
+    color: #fff;
+}
+
+.block-title--list span.title {/*color del letra del panel*/
+    color: #fff;
+    font-family: Balibold, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+}
+
+@media (min-width:768px) {
+    .block-title--list span.title {/*tamano de la letra del panel*/
+        font-size: 1.875rem;
+    }
+}
+
+.block-title--list--last-news {/*detalles del fondo*/
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-indent: -9999em;
+    text-indent: inherit;
+}
+
+.block-title--list--last-news {/*imegen del fondo*/
+    background-image: url(https://www.elcinco.mx/images/bg-lastnews.svg);
+}
+
+
+
+
+
