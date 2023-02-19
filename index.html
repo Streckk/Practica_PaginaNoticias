@@ -1,97 +1,208 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Mi primera web</title>
     <style>
-        table, th, td {
-            border: 2px solid black;
-            
+        /*! CSS Used from: https://www.elcinco.mx/_next/static/css/df22cb5c4a23e495.css */
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-bottom: .5rem;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        img {
+            border-style: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .field-abstract {
+            color: #999;
+            font-size: 1rem;
+            line-height: 1.3;
+            margin-top: 10px;
+        }
+
+        .field-section {
+            background-color: #000;
+            color: #fff;
+            display: block;
+            font-size: 2rem;
+            font-family: Barlow Condensed, Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1;
+            margin-bottom: 10px;
+            padding: 0 2px;
+            text-transform: uppercase;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+        }
+
+        @media (max-width:1200px) {
+            .field-section {
+                font-size: calc(1.1rem + 1.2vw);
+            }
+        }
+
+        .field-section a:hover {
+            opacity: .8;
+        }
+
+        .item.article .field-section {
+            font-size: 1.125rem;
+        }
+
+        @media (max-width:1200px) {
+            .item.article .field-section {
+                font-size: calc(1.0125rem + .15vw);
+            }
+        }
+
+        .field-thumbnail {
+            height: -webkit-fit-content;
+            height: fit-content;
+            height: -moz-fit-content;
+            position: relative;
+        }
+
+        .media-link:hover .field-thumbnail img {
+            filter: grayscale(80%);
+            transform: scale(1);
+            transition: .3s ease-in-out;
+        }
+
+        .media-link:hover .title {
+            cursor: pointer;
+        }
+
+        .wrapper-main {
+            grid-area: main;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        a,
+        a:hover {
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        img {
+            height: auto;
+            max-width: 50%;
+            width: 50%;
+            white-space: break-spaces;
+        }
+
+        :focus {
+            outline: 0;
+        }
+
+        ::selection {
+            background-color: #f4f9ed;
+        }
+
+        .display {
+            line-height: 1.2;
+        }
+
+        .display-xxlarge {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width:1200px) {
+            .display-xxlarge {
+                font-size: calc(1.15rem + 1.8vw);
+            }
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .field-post-date {
+            color: #bbb;
+            display: block;
+            font-size: .9375rem;
+            margin-top: 20px;
+        }
+
+        .item .item-wrapper {
+            margin-top: 10px;
+        }
+
+        /*! CSS Used fontfaces */
+        @font-face {
+            font-family: Barlow Condensed;
+            font-weight: 700;
+            src: local("Barlow Condensed"), url(https://www.elcinco.mx/fonts/BarlowCondensed-BoldItalic.eot?) format("eot"), url(https://www.elcinco.mx/fonts/BarlowCondensed-BoldItalic.woff2) format("woff2"), url(https://www.elcinco.mx/fonts/BarlowCondensed-BoldItalic.woff) format("woff"), url(https://www.elcinco.mx/fonts/BarlowCondensed-BoldItalic.ttf) format("truetype"), url(https://www.elcinco.mx/fonts/BarlowCondensed-BoldItalic.svg#Barlow_Condensed) format("svg");
+            font-display: swap;
         }
     </style>
 </head>
+
 <body>
-    <!--estos es una tabla-->
-    <table style="width: 500px;">
-        <!--el tr es tabla de rows(filas)-->
-        <thead>
-            <tr>
-                <!--el th es tabla de head(cabezera)-->
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!--el td es tabla de elementos estandares-->
-                <td>Hola beats</td>
-                <td>Gratis</td>
-            </tr>
-            <tr>
-                <!--el td es tabla de elementos estandares-->
-                <td>Rico es muy rico jaja</td>
-                <td>29,20$</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <td></td>
-            <td>Total: 49,80$</td>
-        </tfoot>
-    </table>
-
-    <!--ul es lista no ordenada-->
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ul>
-    <!--ol es lista ordenada-->
-    <ol>
-        <li value="50">Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <li>
-            <ol>
-                <li style="list-style-type: lower-roman;">sub elemento 1</li>
-                <li style="list-style-type: lower-roman;">sub elemento 2</li>
-                <li style="list-style-type: lower-roman;">sub elemento 3</li>
-            </ol>
-        </li>
-    </ol>
-
-    <!--Este es un formulario-->
-    <form action="/formulario" method="post">
-        <label for="nombre">Nombre</label>
-        <input value="chanquito" type="text" id="nombre" name="nombre" placeholder="Nombre" />
-        <br> <br>
-        <label for="apellido">Nombre</label>
-        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="apellido" />
-        <br><br>
-        <label for="comentario">Comentario</label>
-        <textarea rows="10" cols="50" id="comentario" placeholder="ingrese comentario" name="comentario">este es un valor por defecto</textarea>
-        <br>
-        <button type="button">Enviar</button>
-        <button type="reset">Enviar</button>
-        <button type="submit">Enviar</button>
-    </form>
-     <!--Los tipos de texto-->
-    <h1>Holaaa como estas</h1>
-    <h2>Holaaa como estas</h2>
-    <h3>Holaaa como estas</h3>
-    <h4>Holaaa como estas</h4>
-    <h5>Holaaa como estas</h5>
-    <h6> Holaaa como estas</h6>
-      <!--Esto es para un parrafo-->
-    <p>Hola esta es mi primer web.</p>
-     <!--Para hacer salto de linea-->
-    <hr>
-    <h2>hola felipe</h2>
-    <p>Texto un poco <span style="color:blue">mas largo</span> y para <br>mostrar mas</p>
-    <!--este es un comentario-->
-    <a target="_blank" href="https://www.google.com">Ir a google</a>
-    <img src="assets/aerial-view-lago-antorno-dolomites-lake-mountain-landscape-alps-peak-misurina-cortina-di-ampezzo-italy-reflected-103752677.jpg" height="400"/>
-    
+    <div class="wrapper-main">
+        <div class="item article new article-large article-large--new large--new"><a
+                href="/estado/buscan-remover-auditor-superior" class="media-link">
+                <div class=" field field-thumbnail">
+                    <div class="placeholder">
+                        <picture>
+                            <img alt="Buscan remover a Auditor Superior &nbsp;"
+                                srcset="https://expreso.press/wp-content/uploads/2015/02/tec-mante.jpg?fp-x=0.47&amp;fp-y=0.39&amp;auto=format,compress&amp;q=70&amp;crop=focalpoint&amp;ar=0.9:1.0&amp;w=450&amp;fit=crop"
+                                width="1" height="1">
+                        </picture>
+                    </div>
+                </div>
+                <div class="item-wrapper">
+                    <div class="field field-section field-section--news" style="background-color: rgb(121, 24, 44);"><a
+                            href="/seccion/estado" class="media-link">Estado</a></div>
+                    <div style="color: rgb(68, 68, 68);">
+                        <div class="title">
+                            <h2 class="display display-xxlarge font-bold display-new"><a
+                                    href="/estado/buscan-remover-auditor-superior" class="media-link">
+                                    <div style="overflow-wrap: break-word;">Tec mante te espera... &nbsp;
+                                    </div>
+                                </a></h2>
+                        </div>
+                    </div>
+                    <div class="field field-abstract font-paragraph-body">
+                        <div style="overflow-wrap: break-word;">No quieren que Espino Ascanio califique el último año de
+                            Cabeza de Vaca</div>
+                    </div><time class="field field-post-date">17 . 02 . 23</time>
+                </div>
+            </a></div>
+    </div>
 </body>
+
 </html>
