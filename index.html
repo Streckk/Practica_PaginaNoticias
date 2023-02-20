@@ -2,96 +2,84 @@
 <html>
 <head>
     <title>Mi primera web</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!--estos es una tabla-->
-    <table style="width: 500px;">
-        <!--el tr es tabla de rows(filas)-->
-        <thead>
-            <tr>
-                <!--el th es tabla de head(cabezera)-->
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!--el td es tabla de elementos estandares-->
-                <td>Hola beats</td>
-                <td>Gratis</td>
-            </tr>
-            <tr>
-                <!--el td es tabla de elementos estandares-->
-                <td>Rico es muy rico jaja</td>
-                <td>29,20$</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <td></td>
-            <td>Total: 49,80$</td>
-        </tfoot>
-    </table>
-
-    <!--ul es lista no ordenada-->
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ul>
-    <!--ol es lista ordenada-->
-    <ol>
-        <li value="50">Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <li>
-            <ol>
-                <li style="list-style-type: lower-roman;">sub elemento 1</li>
-                <li style="list-style-type: lower-roman;">sub elemento 2</li>
-                <li style="list-style-type: lower-roman;">sub elemento 3</li>
-            </ol>
-        </li>
-    </ol>
-
-    <!--Este es un formulario-->
-    <form action="/formulario" method="post">
-        <label for="nombre">Nombre</label>
-        <input value="chanquito" type="text" id="nombre" name="nombre" placeholder="Nombre" />
-        <br> <br>
-        <label for="apellido">Nombre</label>
-        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="apellido" />
-        <br><br>
-        <label for="comentario">Comentario</label>
-        <textarea rows="10" cols="50" id="comentario" placeholder="ingrese comentario" name="comentario">este es un valor por defecto</textarea>
-        <br>
-        <button type="button">Enviar</button>
-        <button type="reset">Enviar</button>
-        <button type="submit">Enviar</button>
-    </form>
-     <!--Los tipos de texto-->
-    <h1>Holaaa como estas</h1>
-    <h2>Holaaa como estas</h2>
-    <h3>Holaaa como estas</h3>
-    <h4>Holaaa como estas</h4>
-    <h5>Holaaa como estas</h5>
-    <h6> Holaaa como estas</h6>
-      <!--Esto es para un parrafo-->
-    <p>Hola esta es mi primer web.</p>
-     <!--Para hacer salto de linea-->
-    <hr>
-    <h2>hola felipe</h2>
-    <p>Texto un poco <span style="color:blue">mas largo</span> y para <br>mostrar mas</p>
-    <!--este es un comentario-->
-    <a target="_blank" href="https://www.google.com">Ir a google</a>
-    <img src="assets/aerial-view-lago-antorno-dolomites-lake-mountain-landscape-alps-peak-misurina-cortina-di-ampezzo-italy-reflected-103752677.jpg" height="400"/>
     
+    <div class="wrapper-col-right">
+        <div class="item article new article-small article-small--new small--new">
+            <a href="/deportes/se-lesiona-jugador-estrella-del-equipo-de-futbol" class="media-link">
+                <div class="image-wrapper">
+                    <div class=" field field-thumbnail">
+                        <div class="placeholder">
+                            <picture>
+                                <source srcset="https://www.elsoldezamora.com.mx/deportes/gsx9u9-0709pretemporada-3/ALTERNATES/LANDSCAPE_768/0709PRETEMPORADA%20(3) 1x, https://www.elsoldezamora.com.mx/deportes/gsx9u9-0709pretemporada-3/ALTERNATES/LANDSCAPE_768/0709PRETEMPORADA%20(3) 2x">
+                                <source srcset="https://www.elsoldezamora.com.mx/deportes/gsx9u9-0709pretemporada-3/ALTERNATES/LANDSCAPE_768/0709PRETEMPORADA%20(3) 1x, https://www.elsoldezamora.com.mx/deportes/gsx9u9-0709pretemporada-3/ALTERNATES/LANDSCAPE_768/0709PRETEMPORADA%20(3) 2x">
+                                <img alt="Llegarían más maquiladoras a Victoria y tiendas de autoservicio" srcset="https://www.elsoldezamora.com.mx/deportes/gsx9u9-0709pretemporada-3/ALTERNATES/LANDSCAPE_768/0709PRETEMPORADA%20(3)" width="1" height="1">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-wrapper">    
+                    <div class="field field-section field-section--news" style="background-color:#9c6107">    
+                        <a href="/deportes" class="media-link">Deportes</a>
+                    </div>    
+                    <div style="color:#444444">    
+                        <div class="title">    
+                            <h2 class="display display-small font-medium display-new">    
+                                <a href="/deportes/se-lesiona-jugador-estrella-del-equipo-de-futbol" class="media-link">    
+                                    <div id="divbold" style="word-wrap:break-word">Se lesiona jugador estrella del equipo de fútbol    
+                                    </div>    
+                                </a>  
+                            </h2>    
+                        </div>  
+                        <time class="field field-post-date">20 / 02 / 23</time>  
+                    </div>  
+                </div>    
+            </a>    
+        </div>    
+        <div class="item article new article-list-small article-list-small--new list-small--new"> 
+            <a href="/deportes/carrera-de-sistemas-organiza-torneo-voleibol" class="media-link">    
+                <div class="item-wrapper">    
+                    <div class="field field-section field-section--news" style="background-color:#9c6107">   
+                        <a href="/deportes" class="media-link">Deportes</a>
+                    </div>
+                    <div style="color:#444444">   
+                        <div class="title">   
+                            <h2 class="display display-new"> 
+                                <a href="/deportes/carrera-de-sistemas-organiza-torneo-voleibol" class="media-link">  
+                                    <div style="word-wrap:break-word">Carrera de Sistemas organiza torneo de voleibol 
+                                    </div>
+                                </a>
+                            </h2>
+                        </div>
+                        <time class="field field-post-date">20 / 02 / 23</time>
+                    </div>
+                </div>
+            </a>
+        </div> 
+        <div class="item article new article-list-small article-list-small--new list-small--new">
+            <a href="/clima/pronostican-cambios-bruscos-de-temperatura" class="media-link">
+                <div class="item-wrapper"> 
+                    <div class="field field-section field-section--news" style="background-color:#0037af">
+                        <a href="/clima" class="media-link">Clima</a>
+                    </div>
+                    <div style="color:#444444"> 
+                        <div class="title"> 
+                            <h2 class="display display-new">
+                                <a href="/clima/pronostican-cambios-bruscos-de-temperatura" class="media-link"> 
+                                    <div style="word-wrap:break-word">Pronosticados cambios bruscos de temperatura 
+                                    </div>  
+                                </a>
+                            </h2> 
+                        </div>  
+                        <time class="field field-post-date">20 / 02 / 23</time>
+                    </div> 
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
