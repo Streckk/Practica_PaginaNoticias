@@ -2,7 +2,7 @@
 :after,
 :before {
     box-sizing: border-box;
-}       
+}
 
 a {
     color: #007bff;
@@ -107,19 +107,21 @@ a:hover {
 
 
 .grid .grid-content {
-    display:grid;
+    display: grid;
     grid-gap: 20px;
     gap: 20px;
 }
 
 
 
-h2 {/*margen en los media llink*/
+h2 {
+    /*margen en los media llink*/
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.block-title--list {/*formato del panel*/
+.block-title--list {
+    /*formato del panel*/
     align-items: center;
     background-position: 0;
     background-size: contain;
@@ -134,14 +136,17 @@ h2 {/*margen en los media llink*/
     width: fit-content;
 }
 
-@media (min-width:768px) {/*posicion del  panel*/
+@media (min-width:768px) {
+
+    /*posicion del  panel*/
     .block-title--list {
         padding-left: 6px;
         padding-right: 6px;
     }
 }
 
-.block-title--list span.hashtag {/*relleno del@*/
+.block-title--list span.hashtag {
+    /*relleno del@*/
     color: #5e2400;
     font-family: Barlow Condensed, Helvetica, Arial, sans-serif;
     font-weight: 700;
@@ -149,43 +154,167 @@ h2 {/*margen en los media llink*/
 }
 
 @media (min-width:768px) {
-    .block-title--list span.hashtag {/*tamano del @*/
+    .block-title--list span.hashtag {
+        /*tamano del @*/
         font-size: 2.8125rem;
     }
 }
 
 
 
-.block-list--last-news .block-title--list span.hashtag {/*color del @*/
+.block-list--last-news .block-title--list span.hashtag {
+    /*color del @*/
     color: #fff;
 }
 
-.block-title--list span.title {/*color del letra del panel*/
+.block-title--list span.title {
+    /*color del letra del panel*/
     color: #fff;
     font-family: Balibold, Helvetica, Arial, sans-serif;
     font-size: 40px;
 }
 
 @media (min-width:768px) {
-    .block-title--list span.title {/*tamano de la letra del panel*/
+    .block-title--list span.title {
+        /*tamano de la letra del panel*/
         font-size: 1.875rem;
     }
 }
 
-.block-title--list--last-news {/*detalles del fondo*/
+.block-title--list--last-news {
+    /*detalles del fondo*/
     background-color: transparent;
     background-repeat: no-repeat;
     text-indent: -9999em;
     text-indent: inherit;
 }
 
-.block-title--list--last-news {/*imegen del fondo*/
+.block-title--list--last-news {
+    /*imegen del fondo*/
     background-image: url(https://www.elcinco.mx/images/bg-lastnews.svg);
 }
 
-.color-list{
+.color-list {
     color: rgb(229, 51, 15);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) {/*tamaño de las imagenes*/
+    .grid-medium .grid-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+a,
+a:hover {/*color de texto*/
+    color: inherit;
+}
+
+
+
+.container {
+    max-width: 1240px;
+    min-width: 350px;
+}
+
+.row {/*marguen*/
+    display: block;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+h2 {/*marguen del h2*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {/*imagenes*/
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    white-space: break-spaces;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .display-medium {
+        font-size: calc(1.0563rem + .6756vw);
+    }
+}
+
+
+
+
+.title-grid {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+.title-grid span {
+    background-color: #fff;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 1;
+}
+
+
+
+.item .item-wrapper {
+    margin-top: 10px;
+}
 
 
